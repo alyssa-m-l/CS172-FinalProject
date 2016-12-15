@@ -1,0 +1,13 @@
+   b    b
+__________________
+B| Bb| Bb|
+b| bb| bb|
+__________________
+red & yellow 2 of 4
+yellow 2 of 4
+red & yellow progeny: 60
+yellow progeny: 7000
+Chi_squared is: 6822.04
+Degress of freedom are: 1
+The p-value is between: 0.005 and 0
+The results are significant, and the predicted cross does not fit the results. 

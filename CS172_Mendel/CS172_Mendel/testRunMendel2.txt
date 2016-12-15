@@ -1,0 +1,8 @@
+   b    b
+__________________
+B| Bb| Bb|
+b| bb| bb|
+__________________
+red 2 of 4
+yellow 2 of 4
+Enter the number of red progeny: 

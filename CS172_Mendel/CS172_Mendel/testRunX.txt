@@ -1,0 +1,13 @@
+   b    Y
+__________________
+B| Bb| BY|
+b| bb| Yb|
+__________________
+red 2 of 4
+yellow 2 of 4
+red progeny: 50
+yellow progeny: 50
+Chi_squared is: 0
+Degress of freedom are: 1
+The p-value is between: 0.995 and 0.975
+The results fit the predicted values for the cross.

@@ -4,6 +4,7 @@
 #include "SexLimited.h"
 using namespace std;
 
+//No arg constructor for derived class
 SexLimited::SexLimited()
 {
 	expressed = 'F';
@@ -14,46 +15,58 @@ SexLimited::SexLimited()
 	this->getGenotypes(dom, recess);
 }
 
+//Constructor for derived class
 SexLimited::SexLimited(char dom, char recess, char express)
 {
+	//Sets sex that expresses the characteristic
 	expressed = express;
+	//Clears genotypes, then sets all variables
 	genotypes.clear();
 	this->getGenotypes(dom, recess);
 	this->getPhenotypes();
 	this->setSubclass();
 }
 
+//Sets phenotype vector
 void SexLimited::getPhenotypes()
 {
+	//Declaring variables for filling vector
 	string domPheno = "";
 	string recessPheno = "";
 	string name = "";
+	//Gettng trait name
 	cout << "What is the trait name?" << endl;
 	cin >> name;
 	this->name = name;
+	//Getting phenotypes
 	cout << "What is the dominant allele phenotype? (SexLim.cpp)" << endl;
 	cin >> domPheno;
 	cout << "What is the recessive allele pehnotype? (SexLim.cpp)" << endl;
 	cin >> recessPheno;
 	phenotypes.clear();
+	//setting expressed phenotypes
 	phenotypes.push_back(domPheno);
 	phenotypes.push_back(domPheno);
 	phenotypes.push_back(recessPheno);
+	//setting all other phenotypes
 	for (int i = 0; i < 3; i++)
 	{
 		nonExpressedPhenotypes.push_back(recessPheno);
 	}
 }
 
+//Method to set subclass tracking number
 void SexLimited::setSubclass()
 {
 	subclass = 3;
 }
 
+//Method to search by a genotype inside a given sex
 string SexLimited::getPhenotypeSearch(vector <char> searchGeno, char sex)
 {
 	int size = 0;
 	string returnPheno = "";
+	//If the search sex matches the sex in which the trait is expressed, searches first three adresses
 	if (sex == expressed)
 	{
 		size = phenotypes.size();
@@ -76,10 +89,12 @@ string SexLimited::getPhenotypeSearch(vector <char> searchGeno, char sex)
 	return returnPheno;
 }
 
+//Method to get genotype from search phenotype
 vector <vector <char>> SexLimited::getGenotypeSearch(string searchPheno)
 {
 	vector<vector <char>> returnGeno;
 	int size = phenotypes.size();
+	//Searches first vector 
 	for (int i = 0; i < size; i++)
 	{
 		if (phenotypes.at(i) == searchPheno)
@@ -88,6 +103,7 @@ vector <vector <char>> SexLimited::getGenotypeSearch(string searchPheno)
 		}
 	}
 	size = nonExpressedPhenotypes.size();
+	//Searches second vector
 	for (int j = 0; j < size; j++)
 	{
 		if (nonExpressedPhenotypes.at(j) == searchPheno)
@@ -103,9 +119,11 @@ vector <vector <char>> SexLimited::getGenotypeSearch(string searchPheno)
 	return returnGeno;
 }
 
+//Method to search for a given genotype by sex
 vector<vector <char>> SexLimited::getGenotypeSearchBySex(string searchPheno, char sex)
 {
 	vector<vector <char>> returnGeno;
+	//Searches first vector 
 	if (sex == expressed)
 	{
 		int size = phenotypes.size();
@@ -117,6 +135,7 @@ vector<vector <char>> SexLimited::getGenotypeSearchBySex(string searchPheno, cha
 			}
 		}
 	}
+	//Searches second vector
 	else
 	{
 		int size = nonExpressedPhenotypes.size();

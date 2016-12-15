@@ -1,0 +1,13 @@
+   b    b
+__________________
+B| Bb| Bb|
+b| bb| bb|
+__________________
+red 2 of 4
+yell 2 of 4
+red progeny: 45
+yell progeny: 890
+Chi_squared is: 763.663
+Degress of freedom are: 1
+The p-value is between: 0.005 and 0
+The results are significant, and the predicted cross does not fit the results. 

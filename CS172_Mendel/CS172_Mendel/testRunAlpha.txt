@@ -1,0 +1,15 @@
+Trait: color
+   B    b
+__________________
+B| BB| Bb|
+b| Bb| bb|
+__________________
+red 3 of 4
+yellow 1 of 4
+Progeny observed: 
+red progeny: 6070
+yellow progeny: 2
+Chi_squared is: 2018.67
+Degress of freedom are: 1
+The p-value is between: 0.005 and 0
+The results are significant, and the predicted cross does not fit the results. 

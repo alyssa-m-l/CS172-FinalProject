@@ -1,0 +1,6 @@
+   b    b
+__________________
+B| Bb| Bb|
+b| bb| bb|
+__________________
+Enter the number of red progeny: 

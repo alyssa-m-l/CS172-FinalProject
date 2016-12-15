@@ -1,0 +1,13 @@
+   B    b
+__________________
+B| BB| Bb|
+b| Bb| bb|
+__________________
+red 3 of 8
+yellow 5 of 8
+red progeny: 70
+yellow progeny: 700
+Chi_squared is: 265.152
+Degress of freedom are: 1
+The p-value is between: 0.005 and 0
+The results are significant, and the predicted cross does not fit the results. 

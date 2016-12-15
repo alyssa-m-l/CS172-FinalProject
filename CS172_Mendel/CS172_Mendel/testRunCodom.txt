@@ -1,0 +1,13 @@
+   b    b
+__________________
+B| Bb| Bb|
+b| bb| bb|
+__________________
+brown 2 of 4
+yellow 2 of 4
+brown progeny: 40
+yellow progeny: 40
+Chi_squared is: 0
+Degress of freedom are: 1
+The p-value is between: 0.995 and 0.975
+The results fit the predicted values for the cross.
