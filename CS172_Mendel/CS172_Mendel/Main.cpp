@@ -19,9 +19,9 @@ int main()
 	//2 = Codominance
 	//3 = Incomplete dominance
 
-	AutosomalLoci testX(1, 'B', 'b');
-	Organism test('F', 'B', 'b', testX);
-	Organism test2('M', 'B', 'b', testX);
+	AutosomalLoci wingShape(1, 'D', 'd');
+	Organism test('F', 'D', 'd', wingShape);
+	Organism test2('M', 'D', 'd', wingShape);
 	Cross tryCross(test2, test);
 	string filename = "", response = "";
 	cout << "Do you wish to export these results?" << endl;
